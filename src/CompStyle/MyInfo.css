@@ -1,0 +1,135 @@
+*{
+    font-family: 'Cairo', sans-serif;;
+    overflow-x: hidden;
+}
+body{
+    background-color: lavender;
+}
+
+.infoWrapper{
+    position: relative;
+}
+
+.img1, .img2{
+    width: 80px;
+    opacity: 0.76;
+    position: absolute;
+    z-index: -1;
+}
+
+.img1{
+    top: 100px;
+    right: -20px;
+}
+
+.img2{
+    bottom: 100px;
+    left: -30px;
+}
+
+
+.cardHolder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Showlocation{
+    letter-spacing: 0.5px;
+    margin-bottom: -10px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.myCard{
+    position: relative;
+}
+
+.myCard img{
+    position: absolute;
+    width: 75px;
+    top: -40px;
+    opacity: 0.9;
+    filter: invert(0.5);
+    left: 2px;
+}
+
+.myCard p,
+.myCard span{
+    margin: 3px;
+    padding: 0;
+}
+
+.infoWrapper h2{
+    background-color: rgb(41, 41, 41);
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 65px 0 30px 0;
+}
+
+.colorScheme {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.colorScheme div{
+    font-weight: 600;
+    margin-top: -22px;
+}
+
+.colorScheme p{
+    display: inline-block;
+}
+
+.colorBox1,
+.colorBox2,
+.colorBox3{
+    width: 50px;
+    height: 22px;
+    border-radius: 3px;
+    margin-right: 10px;
+    background-color: red;
+}
+
+.colorBox2{
+    background-color: yellow;
+}
+
+.colorBox3{
+    background-color: green;
+}
+
+.fetchInfoLoader{
+font-size: 24px;
+font-weight: 700;
+color: red;
+}
+
+.fetchInfoLoader p{
+    animation: animateLoader 1.5s ease infinite forwards;
+}
+
+.fetchInfoLoader img{
+    width: 120px;
+    margin-bottom: -50px;
+}
+
+.updatedOn{
+    color: rgb(231, 231, 231);
+    font-size: 14px;
+}
+
+@keyframes animateLoader{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
